@@ -1,10 +1,9 @@
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.button import Button
 from kivy.core.window import Window
 from kivy.utils import get_hex_from_color
 
-class Container(BoxLayout):
+class Container(BoxLayout):    
     def button_click(self, color, color_name):
         self.label.text = color_name
         self.text_input.text = get_hex_from_color(color)

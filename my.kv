@@ -1,5 +1,3 @@
-#:import hex kivy.utils.get_color_from_hex
-#:import get_hex kivy.utils.get_hex_from_color
 
 <Container>:
     orientation: 'vertical'
@@ -10,7 +8,7 @@
     Label:
         id: label
         text:'pushing p'
-        color: hex('#ffffff')
+        color: '#ffffff'
 
     TextInput:
         id: text_input
@@ -18,70 +16,56 @@
         font_size: 20
 
     Button:
-        text: get_hex(self.background_color)
-        color: hex('#000000')
         background_normal: ''
-        background_color: hex('#ff0000')
+        background_color: '#ff0000'
         color_name: 'красный'
 
         on_press: 
             root.button_click(self.background_color, self.color_name)
     
-    Button:
-        text: get_hex(self.background_color)
-        color: hex('#000000')
+    Button:        
         background_normal: ''
-        background_color: hex('#ff8800')
+        background_color: '#ff8800'
         color_name: 'оранжевый'
 
         on_press: 
             root.button_click(self.background_color, self.color_name)
 
-    Button:
-        text: get_hex(self.background_color)
-        color: hex('#000000')
+    Button:       
         background_normal: ''
-        background_color: hex('#ffff00')
+        background_color: '#ffff00'
         color_name: 'желтый'
 
         on_press: 
             root.button_click(self.background_color, self.color_name)
 
-    Button:
-        text: get_hex(self.background_color)
-        color: hex('#000000')
+    Button:       
         background_normal: ''
-        background_color: hex('#00ff00')
+        background_color: '#00ff00'
         color_name: 'зеленый'
 
         on_press: 
             root.button_click(self.background_color, self.color_name)
 
-    Button:
-        text: get_hex(self.background_color)
-        color: hex('#000000')
+    Button:        
         background_normal: ''
-        background_color: hex('#00ffff')
+        background_color: '#00ffff'
         color_name: 'голубой'
 
         on_press: 
             root.button_click(self.background_color, self.color_name)
         
-    Button:
-        text: get_hex(self.background_color)
-        color: hex('#000000')
+    Button:       
         background_normal: ''
-        background_color: hex('#0000ff')
+        background_color: '#0000ff'
         color_name: 'синий'
 
         on_press: 
             root.button_click(self.background_color, self.color_name)
 
-    Button:
-        text: get_hex(self.background_color)
-        color: hex('#000000')
+    Button:       
         background_normal: ''
-        background_color: hex('#ff00ff')
+        background_color: '#ff00ff'
         color_name: 'фиолетовый'
 
         on_press: 
